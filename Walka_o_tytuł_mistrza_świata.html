@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+ 
+  <title>Walka o tytuł mistrza świata</title> 
+  
+  <meta name="desciption" content="Formula 1" />
+  <meta name="keywords" content="Max Verstappen, Lewis Hamilton, RedBull, Mercedes, F1, World Champion" />
+  
+  <link rel="stylesheet" href="mistrz.css" type="text/css"/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <div id="container">
+   <div class="logo">
+	  <img src="alpine.png"/> &nbsp; <img src="mclaren.png"/> &nbsp; <img src="ferrari.png"/> &nbsp; <img src="Logo_Haas_F1.png"/> &nbsp;  <img src="williams.png"/> &nbsp; <span style="color: #FF0000">World</span> Champion &nbsp; <img src="aston_martin.png"/> &nbsp; <img src="mercedes.png"/> &nbsp; <img src="redbull.png"/> &nbsp; <img src="alfaromeo.png"/> &nbsp; <img src="alphatauri.png" />
+   </div>
+   
+   <div id="menu">
+	 <div class="option"><a href="index.html">Strona główna</a></div>
+	 <div class="option"><a href="Kierowcy.html">Ranking kierowców</a></div>
+	 <div class="option"><a href="ranking zespolow.html">Ranking Zespołów</a></div>
+	 <div class="option">Walka o tytuł mistrza świata</div>
+	 <div class="option"><a href="GP_USA.html"> Informacje o ostatnim wyścigu</a></div>
+	 <div style="clear:both"></div>
+	</div>
+	
+	 <div id="ad">
+	 <img src="lewis.jpg"/>
+	 </br>
+	 <h1>Lewis Hamilton</h1>
+	 <ul>
+	  <li>Kraj pochodzenia: Wielka Brytania</li>
+	  <li>Wiek: 36 lat</li>
+	  <li>Drużyna: Mercedes</li>
+	  <li>L.punktów: 275.5</li>
+	   <li>Pozycja w rankingu kierwoców: 2</li>
+	  <li>Zdobyte tytuły: 7</li>
+	 </ul>
+	 
+	 </div>
+	 
+	 <div id="nav">
+	  <img src="Max.jpg"/>
+      <h1>Max Verstappen</h1>
+	 <ul>
+	  <li>Kraj pochodzenia: Holandia</li>
+	  <li>Wiek: 24 lat</li>
+	  <li>Drużyna: RedBull</li>
+	  <li>L.punktów: 287.5</li>
+	  <li>Pozycja w rankingu kierwoców: 1</li>
+	  <li>Zdobyte tytuły: 0</li>
+	 </ul>
+	 </div>
+	 
+	 <div id="content">
+	 <span class="bigtitle">Lewis Hamilton vs Max Verstappen</span>
+	  <p>Walka obu kierowców w GP USA była niesamowita i trwała od pierwszego aż do ostatniego okrążenia. Mistrz świata potrafił zniwelować 12 sekund straty do zaledwie jednej,
+	     ale Holender wygrał wojnę nerwów i po raz pierwszy stanął na najwyższym stopniu podium w Stanach Zjednoczonych.To jednorazowa linia, która z pewnością poruszy fanów Lewisa Hamiltona,
+		 ale z pewnością jest to argument, który można argumentować z pewną wiarygodnością.
+         Podczas gdy właściciele sportu i znaczna część jego fanów chcieliby zobaczyć parę Verstappen/Hamilton w Mercedesie, aby rozwiązać tę kwestię, prawdopodobnie nie jest to coś, co Mercedes chciałby zrobić – i czemu Red Bull zrobi wszystko, co w jego mocy, aby temu zapobiec.</p>
+		 <iframe width="466" height="262" src="https://www.youtube.com/embed/ZoUnyGs5ZGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; center; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> &nbsp <img src="MVvsLH.png"/>
+	 </div>
+	 
+	 <div id="footer">
+	 Made by Dominik Powrosnik &copy; 2021
+	</div>
+  </div>
+
+<script src="jquery-1.11.3.min.js"></script>
+    <script>
+     $(document).ready(function() {
+	var NavY = $('.logo').offset().top;
+	
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.logo').addClass('sticky');
+	} else {
+		$('.logo').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+   </script>
+</body>
+</html>

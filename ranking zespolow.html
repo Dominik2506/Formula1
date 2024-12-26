@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+ 
+  <title>Ranking Zespołów</title> 
+  
+  <meta name="desciption" content="Formula 1" />
+  <meta name="keywords" content="Aston Martin, F1,Mercedes AMG , Mclaren, Ferrari, Williams, Alafa Romeo, Haas, AlphaTauri, Alpine, RedBull" />
+
+  <link rel="stylesheet" href="zespoly.css" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+ </head>
+ 
+ <body>
+ 
+  <div id="container">
+  
+  <div class="logo">
+	  <img src="alpine.png"/> &nbsp; <img src="mclaren.png"/> &nbsp; <img src="ferrari.png"/> &nbsp; <img src="Logo_Haas_F1.png"/> &nbsp;  <img src="williams.png"/> &nbsp; <span style="color: #FF0000">Constructor</span> Standings &nbsp; <img src="aston_martin.png"/> &nbsp; <img src="mercedes.png"/> &nbsp; <img src="redbull.png"/> &nbsp; <img src="alfaromeo.png"/> &nbsp; <img src="alphatauri.png" />
+	</div>
+	
+	<div id="menu">
+	 <div class="option"><a href="index.html">Strona główna</a></div>
+	 <div class="option"><a href="Kierowcy.html">Ranking kierowców</a></div>
+	 <div class="option">Ranking zespołów</div>
+	 <div class="option"><a href="Walka_o_tytuł_mistrza_świata.html">Walka o tytuł mistrza świata</a></div>
+	 <div class="option"><a href="GP_USA.html"> Informacje o ostatnim wyścigu</a></div>
+	 <div style="clear:both"></div>
+	</div>
+	
+	<div id="sidebar">
+	<h1> Ranking Zespołów:</h1>
+	</br>
+	 <table>
+   <tr>
+      <td>Poz.</td> <td>Zespół</td> <td>Kierowcy</td> <td>L.punktów</td>
+   </tr>
+   <tr>
+      <td>1.</td> <td>Mercedes</td> <td>Lewis Hamilton i Valtteri Bottas</td><td>460,5</td>
+   </tr>
+   <tr>
+    <td>2.</td> <td>RedBull</td> <td>Max Verstappen i Sergio Perez</td> <td>437,5</td>
+   </tr>
+   <tr>
+   <td>3.</td> <td>Mclaren</td> <td>Lando Norris i Daniel Ricciardo</td> <td>254</td>
+   </tr>
+   <tr>
+   <td>4.</td> <td>Ferrari</td> <td>Charles Leclerc i Carlos Sainz</td> <td>250,5</td>
+   </tr>
+   <tr>
+   <td>5.</td> <td>Alpine</td> <td>Fernando Alonso i Esteban Ocon</td> <td>104</td>
+   </tr>
+   <tr>
+   <td>6.</td> <td>AlphaTauri</td> <td>Pierre Gasly i Yuki Tsunoda</td> <td>94</td>
+   </tr>
+   <tr>
+   <td>7.</td> <td>Aston Martin</td> <td>Sebastian Vettel i Lance Stroll</td> <td>62</td>
+   </tr>
+   <tr>
+   <td>8.</td> <td>Williams</td> <td>George Russell i Nicolas Latifi</td> <td>23</td>
+   </tr>
+   <tr>
+   <td>9.</td> <td>Alfa Romeo</td> <td>Kimi Raikkonen i Antonio Giovinazzi</td> <td>7</td>
+   </tr>
+   <tr>
+   <td>10.</td> <td>Haas</td> <td>Mick Schumacher i Nikita Mazepin</td> <td>0</td>
+   </tr>
+  
+   </table>
+   </div>
+   
+   <div id="content">
+   <h1> Walka RedBull'a z Mercedesem </h1>
+   </br>
+   <p>Tak wypowiedział się o niej szef zespołu RedBull Christian Horner. „Sport potrzebował tego od lat”
+      Ekipa Red Bull Racing od sezonu 2013 wyczekiwała swojej kolejnej szansy. Ich droga była momentami wyboista, ale wreszcie w trakcie sezonu 2021 zdołali nawiązać walkę z dominującym od lat Mercedesem. Christian Horner nie ukrywał swojej satysfakcji i podkreślił, 
+	  że wreszcie fani F1 otrzymali jedną z najciekawszych batalii ostatnich 20 lat. Mało kto oczekiwał, że jeszcze przed rewolucją techniczną w sporcie, dojdzie do tak zaciętej rywalizacji. Mercedes nie miał sobie równych w latach 2014-2020, kiedy to zostawali podwójnymi mistrzami w aż 7 sezonach z rzędu. Po drodze szyki próbowało pokrzyżować im Ferrari, które w sezonach 2017-2018 nawiązało walkę. Wówczas nie była ona aż tak intensywna jak obecna Red Bulla z Mercedesem. Między tymi ekipami do walki dochodzi na wszystkich frontach. Nie tylko na torze i w fabrykach, ale i w mediach czy u sędziów/delegatów technicznych. Na łamach Channel 4, szef Red Bulla podkreślił, że walka z Mercedesem nie jest tak trudna jak chociażby,
+	  gdyby doszło do wewnętrznej batalii o MŚ w jego zespole.</p>
+   </div>
+   
+   <div id="footer">
+	 Made by Dominik Powrosnik &copy; 2021
+	</div>
+	
+  </div>
+  
+    <script src="jquery-1.11.3.min.js"></script>
+    <script>
+     $(document).ready(function() {
+	var NavY = $('.logo').offset().top;
+	
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.logo').addClass('sticky');
+	} else {
+		$('.logo').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+   </script>
+</body>
+</html>
+	

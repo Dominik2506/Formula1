@@ -1,0 +1,95 @@
+body
+{
+	background-color: #dedede;
+	font-family: 'Lato', sans-serif;
+	color: #000000;
+}
+
+#container
+{
+	width: 1700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo
+{
+	background-color: #FFFFFF;
+	color:black;
+	font-size: 44px; 
+	font-weight: 700;
+	text-align: center;
+	border: 2px solid #000000;
+	float: bottom;
+}
+
+#menu
+{
+	background-color: #FF0000;
+	margin-top: 20px;
+	color: #FFFFFF;
+	padding: 10px;
+}
+
+#aside
+{
+	margin-top: 20px;
+	float: left;
+	padding: 40px;
+	width: 700px;
+	height: 650px;
+	background-color: #dedede;
+	font-size: 18px;
+	border-right: 2px solid #000000;
+}
+
+#content
+{
+	margin-top: 20px;
+	float: left;
+	padding: 40px;
+	width: 838px;
+	height: 650px;
+	background-color: #FFFFFF;
+	text-align: justify;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+#footer
+{
+	background-color: #FF0000;
+	clear: both;
+	color: #ffffff;
+	text-align: center;
+	padding: 25px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	
+}
+
+.option
+{
+	float:left;
+	min-width:55px;
+	height:25px;
+	font-size:18px;
+	padding:10px;
+	border-right:2px solid #000000;
+	opacity:0.8;
+} 
+
+.option:hover
+{
+	background-color: #FF0000;
+	cursor:pointer;
+}
+
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Informacje o ostatnim wyścigu</title>
+	
+	<meta name="description" content="GP USA 2021" />
+	<meta name="keywords" content="GP USA 2021, ostatni wyścig formuły 1, Austin, Texas" />
+    
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+  
+	<link rel="stylesheet" href="style.css" type="text/css"/>	
+	
+</head>
+
+<body>
+	<div id="container">
+	   
+	   <div class="logo">
+	    <img src="alpine.png"/> &nbsp; <img src="mclaren.png"/> &nbsp; <img src="ferrari.png"/> &nbsp; <img src="Logo_Haas_F1.png"/> &nbsp;  <img src="williams.png"/> &nbsp; GP &nbsp;<span style="color: #FF0000">USA</span> &nbsp; <img src="aston_martin.png"/> &nbsp; <img src="mercedes.png"/> &nbsp; <img src="redbull.png"/> &nbsp; <img src="alfaromeo.png"/> &nbsp; <img src="alphatauri.png" />
+	   </div>
+		
+		<div id="menu">
+	     <div class="option"><a href="index.html">Strona główna</a></div>
+	     <div class="option"><a href="Kierowcy.html">Ranking kierowców</a></div>
+	     <div class="option"><a href="ranking zespolow.html">Ranking zespołów</a></div>
+	     <div class="option"><a href="Walka_o_tytuł_mistrza_świata.html">Walka o tytuł mistrza świata</a></div>
+	     <div class="option">Informacje o ostatnim wyścigu</div>
+	     <div style="clear:both"></div>
+	    </div>
+		
+		<div id="aside">
+		 <h1>Pozycje na mecie:</h1>
+	<ol>
+		<li>Max Verstappen </li> 
+		<li>Lewis Hamilton</li>
+		<li>Sergio Perez</li>
+		<li>Charles Leclerc</li>
+		<li>Daniel Ricciardo</li>
+		<li>Valtteri Bottas</li>
+		<li>Carlos Sainz</li>
+		<li>Lando Norris</li>
+		<li>Yuki Tsunoda</li>
+		<li>Sebastian Vettel</li>
+		<li>Antonio Giovinazzi</li>
+		<li>Lance Stroll</li>
+		<li>Kimi Räikkönen</li>
+		<li>Goerge Russell</li>
+		<li>Nicolas Latifi</li>
+		<li>Mick Schumacher</li>
+		<li>Nikita Mazepin</li>
+		<li>Fernando Alonso</li>
+		<li>Esteban Ocon</li>
+		<li>Pierre Gasly</li>
+	</ol>
+	 
+   
+		 </div>
+		
+		
+		<div id="content">
+		 <h1>Grand Prix Stanów Zjednoczonych 2021</h1>
+		 <p>Oficjalnie Formula 1 Aramco United States Grand Prix 2021 – siedemnasta runda Mistrzostw Świata Formuły 1 w sezonie 2021.
+		    Grand Prix odbywa się w dniach <u>22–24 października 2021 </u> na torze Circuit of the Americas w Austin. Zwycięstwo odnióśł
+			Max Verstappen kończąc na 1 miejscu a zaraz za nim uklasował sie Lewis Hamilton na 2 miejscu i Sergio Perez na 3.</br>
+			<mark>Po naciśnieciu na nitkę toru Austin w USA przejdziesz do flimu z najciekawszymi wydarzeniami, które miały miejsce podczas wyścigu.</mark> <a href="https://www.youtube.com/watch?v=-Ee08uFurok"> </p>
+			<img src="austin.jpg"/> </a>
+		</div>
+		
+		<div id="footer">
+		 Made by Dominik Powrosnik &copy; 2021
+		</div>
+	</div>
+
+ <script src="jquery-1.11.3.min.js"></script>
+    <script>
+     $(document).ready(function() {
+	var NavY = $('.logo').offset().top;
+	
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.logo').addClass('sticky');
+	} else {
+		$('.logo').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+   </script>	
+</body>
+</html>
